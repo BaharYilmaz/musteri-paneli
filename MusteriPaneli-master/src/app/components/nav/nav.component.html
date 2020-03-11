@@ -1,4 +1,15 @@
-<nav  class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<!-- <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <h5 class="my-0 mr-md-auto ">Müşteri Paneli</h5>
+  <nav class="my-2 my-md-0 mr-md-3">
+    <a class="p-2 text-dark" href="./customers">Müşteri Listesi</a>
+    <a class="p-2 text-dark" href="./login">Login</a>
+    <a class="p-2 text-dark" href="./add-customer">Musteri ekle</a>
+  
+  </nav>
+  <a class="btn btn-outline-primary" (click)="logOut()" *ngIf="isAuthenticated" href="#">Çıkış Yap</a>
+</div> -->
+
+ <nav  class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <a class="navbar-brand" href="">Müşteri Paneli</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -10,14 +21,20 @@
           <a class="nav-link" href="./customers">Müşteri Listesi <span class="sr-only"></span></a>
         </li> 
         <li class="nav-item">
-          <a class="nav-link" href="./add-customer"> Musteri ekle<span class="sr-only"></span></a>
+          <a class="nav-link" href="./add-customer"> Musteri Ekle<span class="sr-only"></span></a>
         </li> 
-       <li  class="nav-item ">
-          <a class="nav-link" (click)="logOut()"  *ngIf="isAuthenticated">Çıkış  Yap<span class="sr-only"></span></a>
-        </li>   
+       
       
       </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <button class="btn btn-outline-primary my-2 my-sm-0" (click)="logOut()"  *ngIf="isAuthenticated">Çıkış Yap</button>
+      </form>
+      <!-- <ul>
+        <li  class="nav-item ">
+          <a class="nav-link inline-block text-primary" (click)="logOut()"  *ngIf="isAuthenticated">Çıkış Yap<span class="sr-only"></span></a>
+        </li>  
+      </ul> -->
      
     </div>
-  </nav>
-  
+  </nav> 
+ 

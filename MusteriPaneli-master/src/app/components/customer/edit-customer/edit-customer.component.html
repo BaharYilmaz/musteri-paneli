@@ -1,7 +1,7 @@
 <app-nav></app-nav>
 
 
-<div class="row" style="padding-top:75px;">
+<div class="row">
     <div class="col-sm-9 col-md-7 col-lg-5 mx-auto " >
         <div class="card card-signin my-5">
             <div class="card-body">
@@ -10,19 +10,19 @@
                 <form [formGroup]="FormMusteriDuzenle" (ngSubmit)="musteriDuzenle()" class="">
 
 
-                    <div class="form-group" style="margin-top:40px;">
+                    <div class="form-group" >
                         <input class="form-control" type="text" name="MusteriAd" id="MusteriAd" formControlName="musteriAd"
                             placeholder="Müşteri Ad">
                          <span class="help-block" *ngIf="FormMusteriDuzenle.get('musteriAd').hasError('required') && FormMusteriDuzenle.get('musteriAd')">Bu alan zorunludur</span> 
 
                     </div>   
-                    <div class="form-group" style="margin-top:40px;">
+                    <div class="form-group">
                         <input class="form-control" type="text" name="MusteriSoyad" id="MusteriSoyad" formControlName="musteriSoyad"
                             placeholder="Musteri Soyad">
                          <span class="help-block" *ngIf="FormMusteriDuzenle.get('musteriSoyad').hasError('required') && FormMusteriDuzenle.get('musteriSoyad')">Bu alan zorunludur</span> 
 
                     </div>  
-                    <div class="form-row" style="margin-top:40px;">
+                    <div class="form-row" >
                         <div class="form-group col-md-6" col-md-6>
                             <label class="text-muted" >Departman Değiştir...</label> </div>
                             <div class="form-group col-md-6" col-md-6>
@@ -61,10 +61,10 @@
                     </div>    -->
 
                       
-                    <button type="submit" style="margin-top:40px;" class="btn btn-lg btn-success btn-block text-uppercase"
-                        [disabled]="!FormMusteriDuzenle.valid" type="submit">Guncelle</button>
-                    <h6>{{FormMusteriDuzenle.value|json}}</h6>
-                    <h6>{{FormMusteriDuzenle.status|json}}</h6>
+                    <button type="submit" style="margin-top:40px;" class="btn btn-lg btn-success btn-block"
+                        [disabled]="!FormMusteriDuzenle.valid" type="submit">KAYDET</button>
+                    <!-- <h6>{{FormMusteriDuzenle.value|json}}</h6>
+                    <h6>{{FormMusteriDuzenle.status|json}}</h6> -->
 
 
 
