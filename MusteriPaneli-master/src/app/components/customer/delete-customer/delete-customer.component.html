@@ -1,25 +1,27 @@
 <div class="container mt-5" style="padding-top:75px;">
   <div class="row">
-    <div class=" col-md-9 mx-auto " >
-        <div class="card card-signin my-5">
-            <div class="card-body">
-  <h3 class="text-danger">Bu müşteriyi silmek istediğinizden emin misiniz ?</h3>
-  <table  class="table table-hover table-bordered">
+    <div class=" col-md-9 mx-auto ">
+      <div class="card card-signin my-5">
+        <div class="card-body">
+          <h3 class="text-danger" style="padding-bottom:40px;">Bu müşteriyi silmek istediğinizden emin misiniz ?</h3>
+          <table class="table table-hover table-bordered">
 
-    <tr *ngFor="let m of musterim">
+            <tr *ngFor="let m of musterim">
 
-      <td>{{m.musteriAd}}
-      </td>
-      <td>{{m.musteriSoyad}}
-      </td>
-      <td>
-        <button class="btn btn-danger" (click)="musteriSil(m.musteriId)">SİL</button> 
+              <td>{{m.musteriAd}}
+              </td>
+              <td>{{m.musteriSoyad}}
+              </td>
+              <td>
+                <button class="btn btn-danger" (click)="musteriSil(m.musteriId)">SİL</button>
+              </td>
+              <td> <button class="btn btn-primary" (click)="musteriSilIptal()">İPTAL</button>
+              </td>
 
-
-      </td>
-      <td>        <button class="btn btn-primary" (click)="musteriSilIptal()">İPTAL</button> 
-      </td>
-
-    </tr>
-  </table>
-</div></div></div></div></div>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
