@@ -1,0 +1,51 @@
+<app-nav></app-nav>
+
+<br><br><br>
+<div class="row">
+    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto " id="soruHazirla">
+        <div class="card card-signin my-5">
+            <div class="card-body">
+                <h5 class="text-center"><b>Müşteri Bilgileri Düzenle</b></h5>
+                <br /><br />
+                <form [formGroup]="FormMusteriDuzenle" (ngSubmit)="musteriDuzenle()" class="">
+
+
+                    <div class="form-label-group">
+                        <input type="text" name="MusteriAd" id="MusteriAd" formControlName="musteriAd"
+                            placeholder="Müşteri Ad">
+
+                         <span class="help-block" *ngIf="FormMusteriDuzenle.get('MusteriAd').hasError('required') && FormMusteriDuzenle.get('MusteriAd')">Bu alan zorunludur</span> 
+
+                    </div> <br /><br />
+                    <div class="form-label-group">
+                        <input type="text" name="MusteriSoyad" id="MusteriSoyad" formControlName="musteriSoyad"
+                            placeholder="Müşteri Soyad">
+                        <span class="help-block"
+                            *ngIf="FormMusteriDuzenle.get('MusteriSoyad').hasError('required') && FormMusteriDuzenle.get('MusteriSoyad')">Bu
+                            alan zorunludur</span>
+
+                    </div>
+                    <br />
+                    <div class="form-label-group">
+                        <input type="text" name="MusteriDepartman" id="MusteriDepartman"
+                            formControlName="musteriDepartman">
+                        <span class="help-block"
+                            *ngIf="FormMusteriDuzenle.get('MusteriDepartman').hasError('required') && FormMusteriDuzenle.get('MusteriDepartman')">Bu
+                            alan zorunludur</span>
+
+                    </div> <br /><br />
+
+                    <br /><br />
+                    <button type="submit" class="btn btn-lg btn-success btn-block text-uppercase"
+                        [disabled]="!FormMusteriDuzenle.valid" type="submit">Guncelle</button>
+                    <h6>{{FormMusteriDuzenle.value|json}}</h6>
+                    <h6>{{FormMusteriDuzenle.status|json}}</h6>
+
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

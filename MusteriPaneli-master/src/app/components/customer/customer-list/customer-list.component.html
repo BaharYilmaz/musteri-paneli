@@ -1,0 +1,34 @@
+<app-nav></app-nav>
+
+<br><br><br><br>
+<div class="container">
+<p>Farklı Departmanlara Ait Müşterilerin Listesi</p>
+<table class="table table-bordered" id="tblDepartman">
+    <thead>
+        <tr>
+            <th>Müşteri Adı</th>
+            <th>Müşteri Soyadı</th>
+            <th>Departman</th>
+            <th>Düzenle</th>
+            <th>Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+       
+        <tr *ngFor="let m of musteriListesi">
+            <td>{{m.musteriAd}}</td>
+            <td>{{m.musteriSoyad}}</td>
+            <td>{{m.musteriDepartman}}</td>
+
+            <td><a class="btn btn-primary" routerLink="/edit-customer/{{m.musteriId}}"  >Düzenle</a></td>
+             <td><a class="btn btn-danger" routerLink="/delete-customer/{{m.musteriId}}">Sil</a></td> <!--burdan ıd gitmeli -->
+             <td><a class="btn btn-danger" routerLink="/delete-customer/{{m}}">Bunu kesin Sil</a></td> <!--burdan ıd gitmeli -->
+
+            <!-- <td><a  class="btn btn-warning " data-id="@musteri.Id">Sil</a></td> -->
+        </tr>
+
+        
+
+    </tbody>
+</table>
+</div>

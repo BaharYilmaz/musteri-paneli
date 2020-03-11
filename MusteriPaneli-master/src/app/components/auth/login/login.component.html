@@ -1,0 +1,36 @@
+<br><br>
+<br >
+<!-- *ngIf="!isAuthenticated" -->
+
+   <form  *ngIf="!isAuthenticated"  #loginForm="ngForm" (ngSubmit)="login()" >
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto" style="margin-top: 80px;">
+                <div class="card card-signin my-5">
+                    <div class="card-body">
+
+                        <h5 class="card-title text-center">Giriş Ekranı</h5>
+                        
+                            <div class="form-label-group">
+                              <input class="form-control mr-sm-2" type="text" name="KullaniciAdi" [(ngModel)]="loginYonetici.KullaniciAdi" placeholder="Kullanıcı Adı" required/>
+
+                            </div>
+                            <br />
+                            <div class="form-label-group">
+                              <input class="form-control mr-sm-2" type="password" name=Sifre [(ngModel)]="loginYonetici.Sifre" placeholder="Sifre" required/>
+
+                            </div>
+
+                            <br /><br />
+                            <button class="btn btn-lg btn-success btn-block text-uppercase" [disabled]="!loginForm.valid" type="submit">Giriş yap</button>
+
+                            <hr class="my-4">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
