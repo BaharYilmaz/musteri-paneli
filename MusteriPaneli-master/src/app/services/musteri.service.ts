@@ -25,7 +25,7 @@ export class MusteriService {
 
 
   musteriSil(musteriId: number) {
-    alert("musteriSilservis " + musteriId);
+    // alert("musteriSilservis " + musteriId);
     return this.httpClient
       .post(this.path + "musteri/sil/?musteriId=" + musteriId, {})
       .subscribe(data => {
@@ -43,11 +43,12 @@ export class MusteriService {
       });
   }
   musteriDuzenle(musteri: Musteri) {
+
     this.httpClient
       .post(this.path + "musteri/guncelle", musteri)
       .subscribe(data => {
         this.alertifyService.success(
-          data["MusteriAd"] + "Müşteri başarıyla güncellendi."
+       "Müşteri başarıyla güncellendi."
         );
         this.router.navigateByUrl("/customers");
       });
@@ -71,17 +72,15 @@ export class MusteriService {
   // }
 
   musteriGetir(musteriId): Observable<Musteri[]> {
-    alert("gelen musteri ıd" + musteriId);
+    // alert("gelen musteri ıd" + musteriId);
     return this.httpClient.get<Musteri[]>
     (
       this.path + "musteri/musteriGetir/" + musteriId
     );
   }
 
-
-
-
-
-
+  musteriListesineGit(){
+    this.router.navigateByUrl("/customers");
+  }
 
 }

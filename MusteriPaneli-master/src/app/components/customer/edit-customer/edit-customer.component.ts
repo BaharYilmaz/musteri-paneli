@@ -20,7 +20,7 @@ export class EditCustomerComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params =>{
       //this.denemeAbi();
-      alert("musteriID ****>"+params['musteriId']);
+      // alert("musteriID ****>"+params['musteriId']);
       this.musteriGetir(params['musteriId']);
       
         })
@@ -37,13 +37,12 @@ export class EditCustomerComponent implements OnInit {
    this.FormMusteriDuzenle=this.formBuilder.group({
     musteriAd:["",Validators.required],
     musteriId:["",Validators.required],
-
     musteriSoyad:["",Validators.required],
-     musteriDepartman:["",Validators.required]
+    musteriDepartman:["",Validators.required]
    })
   }
 
-  //form submit
+  //form submit olduğunda
   musteriDuzenle(){
     if(this.FormMusteriDuzenle.valid){
       this.musteri=Object.assign({},this.FormMusteriDuzenle.value)

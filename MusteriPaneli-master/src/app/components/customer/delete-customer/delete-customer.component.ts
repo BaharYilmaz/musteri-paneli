@@ -28,23 +28,22 @@ export class DeleteCustomerComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params =>{
   //this.denemeAbi();
-  alert("musteriID ****>"+params['musteriId']);
+  //alert("musteriID ****>"+params['musteriId']);
   this.musteriGetir(params['musteriId']);
   
     })
   }
 
    musteriGetir(musteriId:number) { 
-    alert("gelen musteri ıd" + musteriId);
+    //alert("gelen musteri ıd" + musteriId);
 
      this.musteriService.musteriGetir(musteriId).subscribe(data => {
-       alert("konya yolundayım");
      this.musterim = data;
-     alert("musteri ataması yapıldı")
  
      });
   }
   musteriSilIptal(){
+    this.musteriService.musteriListesineGit();
     
   }
   // denemeAbi(){

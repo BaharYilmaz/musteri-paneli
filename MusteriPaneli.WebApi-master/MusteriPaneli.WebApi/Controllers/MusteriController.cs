@@ -38,7 +38,7 @@ namespace MusteriPaneli.WebApi.Controllers
         [Route("guncelle")]
         public ActionResult MusteriGuncelle([FromBody] Musteri musteri) //from form
         {
-            //_appRepository.Guncelle(musteri, musteriId);
+            _appRepository.Guncelle(musteri);
             _appRepository.DegisiklikleriKaydet();
 
             return Ok();
