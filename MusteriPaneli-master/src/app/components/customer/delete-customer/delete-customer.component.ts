@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import { MusteriService } from 'src/app/services/musteri.service';
 import { Musteri } from 'src/app/models/Musteri';
-import { Product } from 'src/app/models/Product';
+
 
 
 @Component({
@@ -22,7 +22,6 @@ export class DeleteCustomerComponent implements OnInit {
    m:Musteri={MusteriAd:"mts",MusteriDepartman:"arge",MusteriId:14,MusteriSoyad:"bhr"};
   musterim:Musteri[]=[];
   MusterimId:any;
-  product: Product;
 
 
   ngOnInit(): void {

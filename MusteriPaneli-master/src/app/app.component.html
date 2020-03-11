@@ -6,8 +6,7 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- <app-customer-list></app-customer-list> -->
-<!-- <app-login ></app-login> -->
-<app-nav ></app-nav>
-<router-outlet >
-</router-outlet>  
+<app-nav *ngIf="isAuth"></app-nav>
+<app-login *ngIf="!isAuth"></app-login>
+<router-outlet *ngIf="isAuth" >
+</router-outlet>

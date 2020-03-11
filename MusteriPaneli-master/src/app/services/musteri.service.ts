@@ -4,7 +4,6 @@ import { Observable } from "rxjs";
 import { Musteri } from "../models/Musteri";
 import { AlertifyService } from "./alertify.service";
 import { Router } from "@angular/router";
-import { Product } from '../models/Product';
 
 @Injectable({
   providedIn: "root"

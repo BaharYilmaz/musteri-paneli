@@ -10,11 +10,11 @@ import { LoginComponent } from './components/auth/login/login.component';
 })
 export class AppComponent {
   title = 'MusteriPaneli';
-  constructor(private loginCom:LoginComponent) {
+  constructor(private loginComp:LoginComponent) {
    
     
   }
-  Isaut(){
-    return this.loginCom.isAuthenticated;
+  get isAuth(){
+    return this.loginComp.isAuthenticated;
    }
 }
