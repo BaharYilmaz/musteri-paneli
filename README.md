@@ -4,19 +4,19 @@ Uygulama Visual Studio 2017 kullanılarak Asp.Net Core 2.2 ve Angular 9.0.5 ile 
 Uygulama içerisinde yönetici giriş yapıp müşteri listeleme/ekleme/silme/düzenleme işlemlerini gerçekleştirebilmektedir.
 Yönetici giriş işleminde JSON Web Token(Jwt) kullanılmıştır.
 
-## Uygulamanın çalışır halinin videosu => https://drive.google.com/file/d/1Q6eomcMxHqWrG1AsY5SlzchaVDyQIXlO/view
+*Uygulamanın çalışır halinin videosu => https://drive.google.com/file/d/1Q6eomcMxHqWrG1AsY5SlzchaVDyQIXlO/view
 
 ## Uygulamanın kurulumu ve çalıştırılması =>
 Öncelikle MSSQL Management Studio ile musteri_paneli.sql adlı script  çalıştırılarak veritabanı oluşturulmalıdır.
 
 ## Visual Studio’da kullanılan paketler
-*	EntityfFrameworkCore 2.2.2
+* EntityfFrameworkCore 2.2.2
 * Microsoft.EntityFrameworkCore.SqlServer 2.2.2
 * Microsoft.AspNetCore.Cors 2.2.0
 
 ## Visual Studio ile MusteriPaneli.WebApi servisini çalıştırmak için =>
 
-*	Uygulama içerinde yer alan appsettings.json dosyasından veritabanı bağlantısı için “ConnectionStrings” değiştirilmelidir. 
+* Uygulama içerinde yer alan appsettings.json dosyasından veritabanı bağlantısı için “ConnectionStrings” değiştirilmelidir. 
 
 
  ![image](https://user-images.githubusercontent.com/48556212/77822137-15a0ff00-7101-11ea-8d46-ed0d699fec25.png)
@@ -25,7 +25,7 @@ Yönetici giriş işleminde JSON Web Token(Jwt) kullanılmıştır.
 
 
 
-	Ve uygulama çalıştırılmalıdır.
+ * Ve uygulama çalıştırılmalıdır.
  
 ## Servis çalışıyor =>
 ![image](https://user-images.githubusercontent.com/48556212/77822162-4b45e800-7101-11ea-9973-c58964064219.png)
@@ -46,9 +46,30 @@ Yönetici giriş işleminde JSON Web Token(Jwt) kullanılmıştır.
 ![image](https://user-images.githubusercontent.com/48556212/77822182-7597a580-7101-11ea-8a1b-9887251457a6.png)
  
 
-*	Artık web uygulaması çalışır durumdadır. Gelen giriş ekranından 
+*	Artık web uygulaması çalışır durumdadır.Gelen giriş ekranından 
 
 Kullanıcı Adı : “admin”
 Şifre: “admin”
 
 yazarak giriş yapan kişi bir takım müşteri işlemlerini gerçekleştirebilip dilerse uygulamadan çıkış yapabilmektedir.
+
+*Giriş Ekranı
+
+![a giris](https://user-images.githubusercontent.com/48556212/77822410-69ace300-7103-11ea-82f0-6ac719a56e5a.png)
+
+*Müşteri Listeleme
+
+![m listele](https://user-images.githubusercontent.com/48556212/77822408-6580c580-7103-11ea-9c80-4b58da8722a7.png)
+
+*Müşteri Ekleme
+
+![m ekle](https://user-images.githubusercontent.com/48556212/77822403-5d288a80-7103-11ea-8d0e-e3cdc841d19a.png)
+
+*Müşteri Güncelleme
+
+![m duzenle](https://user-images.githubusercontent.com/48556212/77822393-43874300-7103-11ea-8703-0ee1358d8dd2.png)
+
+*Müşteri Silme
+
+![m sil](https://user-images.githubusercontent.com/48556212/77822386-32d6cd00-7103-11ea-8e94-328a29cb827e.png)
+
