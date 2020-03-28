@@ -1,7 +1,7 @@
 # MÜSTERİ PANELİ UYGULAMASI
 
-Uygulama Visual Studio 2017 kullanılarak Asp.Net Core 2.2 ve Angular 9.0.5 ile geliştirilmiştir. Veritabanı olarak MSSQL kullanılmıştır.
-Uygulama içerisinde yönetici giriş yapıp müşteri listeleme/ekleme/silme/düzenleme işlemlerini gerçekleştirebilmektedir.
+*Uygulama Visual Studio 2017 kullanılarak Asp.Net Core 2.2 ve Angular 9.0.5 ile geliştirilmiştir. Veritabanı olarak MSSQL kullanılmıştır.
+*Uygulama içerisinde yönetici giriş yapıp müşteri listeleme/ekleme/silme/düzenleme işlemlerini gerçekleştirebilmektedir.
 Yönetici giriş işleminde JSON Web Token(Jwt) kullanılmıştır.
 
 *Uygulamanın çalışır halinin videosu => https://drive.google.com/file/d/1Q6eomcMxHqWrG1AsY5SlzchaVDyQIXlO/view
@@ -52,3 +52,4 @@ Kullanıcı Adı : “admin”
 Şifre: “admin”
 
 yazarak giriş yapan kişi bir takım müşteri işlemlerini gerçekleştirebilip dilerse uygulamadan çıkış yapabilmektedir.
+
