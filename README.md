@@ -52,24 +52,3 @@ Kullanıcı Adı : “admin”
 Şifre: “admin”
 
 yazarak giriş yapan kişi bir takım müşteri işlemlerini gerçekleştirebilip dilerse uygulamadan çıkış yapabilmektedir.
-
-*Giriş Ekranı
-
-![a giris](https://user-images.githubusercontent.com/48556212/77822410-69ace300-7103-11ea-82f0-6ac719a56e5a.png)
-
-*Müşteri Listeleme
-
-![m listele](https://user-images.githubusercontent.com/48556212/77822408-6580c580-7103-11ea-9c80-4b58da8722a7.png)
-
-*Müşteri Ekleme
-
-![m ekle](https://user-images.githubusercontent.com/48556212/77822403-5d288a80-7103-11ea-8d0e-e3cdc841d19a.png)
-
-*Müşteri Güncelleme
-
-![m duzenle](https://user-images.githubusercontent.com/48556212/77822393-43874300-7103-11ea-8703-0ee1358d8dd2.png)
-
-*Müşteri Silme
-
-![m sil](https://user-images.githubusercontent.com/48556212/77822386-32d6cd00-7103-11ea-8e94-328a29cb827e.png)
-
