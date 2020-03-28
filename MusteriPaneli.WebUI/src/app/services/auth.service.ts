@@ -36,6 +36,10 @@ export class AuthService {
       this.alertifyService.success("Sisteme giriş yapıldı.");
       this.router.navigateByUrl('/customers');
 
+    },
+    error => {
+      this.alertifyService.error("Kullanıcı adı veya şifre yanlış");
+      console.log("error" + error);
     });
 
   }

@@ -15,6 +15,7 @@ export class AlertifyService {
     alertify.warning(message)
   }
   error(message: string) {
-    alertify.error(message)
+    alertify.error(message);
+    alertify.set('notifier','position', 'top-right');
   }
 }

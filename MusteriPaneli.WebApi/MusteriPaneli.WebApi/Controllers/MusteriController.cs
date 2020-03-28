@@ -45,7 +45,7 @@ namespace MusteriPaneli.WebApi.Controllers
         }
         [HttpPost]
         [Route("sil")]
-        public ActionResult MusteriSil(int musteriId)//değişebilir
+        public ActionResult MusteriSil(int musteriId)
         {
             if (musteriId != null)
             {
@@ -54,46 +54,19 @@ namespace MusteriPaneli.WebApi.Controllers
             }
            
 
-            return Ok();//eklenen müşteriyi döndür
+            return Ok();
         }
 
-        //[HttpGet("musteridetail/{musteriId}")]
-        //public ActionResult<Musteri> MusteriGetir(int musteriId)//değişebilir
-        //{
-        //    // Musteri musteri =  _appRepository.MusteriGetir(musteriId);
-        //    Musteri musteri = new Musteri
-        //    {
-        //        MusteriAd = "mts",
-        //        MusteriDepartman = "mts",
-        //        MusteriId = 1,
-        //        MusteriSoyad = "mts"
-        //    };
-
-        //    return musteri;
-
-
-
-        //}
+     
         [HttpGet("musteriGetir/{musteriId}")]
-        public ActionResult MusteriGetir(int musteriId)//değişebilir
+        public ActionResult MusteriGetir(int musteriId)
         {
-            var m = _appRepository.MusteriGetir(musteriId);
-            return Ok(m);
+            var musteri = _appRepository.MusteriGetir(musteriId);
+            return Ok(musteri);
             
         }
        
 
-
-        //[HttpGet("musteridetail2/{musteriId}")]
-        //public ActionResult<Musteri> musteriGetirme(int musteriId)//değişebilir
-        //{
-        //    Musteri musteri = _appRepository.MusteriGetir(musteriId);
-
-        //    return musteri;
-
-
-
-        //}
        
 
     }

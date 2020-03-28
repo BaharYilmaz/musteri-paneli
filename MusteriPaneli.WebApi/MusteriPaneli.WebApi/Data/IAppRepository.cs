@@ -13,9 +13,7 @@ namespace MusteriPaneli.WebApi.Data
         void Sil(int id);
         void Guncelle<T>(T entity) where T : class; 
         bool DegisiklikleriKaydet();
-
-        //todo
-       // Musteri MusteriGetir(int id);
+        
         List<Musteri> MusteriListele();
         List<Musteri> MusteriGetir(int id);
 

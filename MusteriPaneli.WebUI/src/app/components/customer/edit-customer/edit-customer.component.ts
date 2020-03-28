@@ -19,8 +19,6 @@ export class EditCustomerComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params =>{
-      //this.denemeAbi();
-      // alert("musteriID ****>"+params['musteriId']);
       this.musteriGetir(params['musteriId']);
       
         })
@@ -30,7 +28,6 @@ export class EditCustomerComponent implements OnInit {
 
   musterim:Musteri[]=[];
   musteri:Musteri;
-  denemeMusteri:Musteri[]=[];
   FormMusteriDuzenle:FormGroup;
   
   musteriFormOlustur(){
@@ -54,14 +51,7 @@ export class EditCustomerComponent implements OnInit {
 
      this.musteriService.musteriGetir(musteriId).subscribe(data => {
      this.musterim = data;
-    // this.denemeMusteri[0] = {MusteriAd:"mts",MusteriDepartman:"mts",MusteriId:1,MusteriSoyad:"deneme"}
-    this.FormMusteriDuzenle.setValue(this.musterim[0]);
-     for (let index = 0; index < this.musterim.length; index++) {
-       const element = this.musterim[index];
-       console.log("subs içindeki değer"+element.MusteriAd);
-       
-     }
-
+     this.FormMusteriDuzenle.setValue(this.musterim[0]);
      });
     }
 }

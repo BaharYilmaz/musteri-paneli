@@ -25,8 +25,6 @@ namespace MusteriPaneli.WebApi.Data
 
         public void Guncelle<T>(T entity) where T : class
         {
-            //
-           // var musteri = MusteriGetir(id);
             _context.Update(entity);
 
         }
@@ -57,14 +55,7 @@ namespace MusteriPaneli.WebApi.Data
 
             }
         }
-
-        //public Musteri MusteriGetir(int id)
-        //{
-        //    Musteri musteri = _context.Musteri.Find(id);
-        //    //Musteri musteri = new Musteri { MusteriAd = "mts", MusteriDepartman = "asd", MusteriId = 1, MusteriSoyad = "asd" };
-
-        //    return musteri;
-        //}
+        
 
         public List<Musteri> MusteriGetir(int id)
         {

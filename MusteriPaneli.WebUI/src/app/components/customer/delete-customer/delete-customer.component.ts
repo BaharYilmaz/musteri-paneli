@@ -26,8 +26,6 @@ export class DeleteCustomerComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params =>{
-  //this.denemeAbi();
-  //alert("musteriID ****>"+params['musteriId']);
   this.musteriGetir(params['musteriId']);
   
     })
@@ -45,18 +43,12 @@ export class DeleteCustomerComponent implements OnInit {
     this.musteriService.musteriListesineGit();
     
   }
-  // denemeAbi(){
-  //   this.musteriService.getProductById(20).subscribe(data =>{
-  //     this.product = data;
-  //   })
-  //}
-  musteriSil(musteriId){//
-    alert(musteriId)
+ 
+  musteriSil(musteriId){
     this.musteriService.musteriSil(musteriId);
     
     };
 
-    
   }
 
 

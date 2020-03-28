@@ -43,7 +43,7 @@ export class AddCustomerComponent implements OnInit {
   musteriEkle(){
     if(this.FormMusteriEkle.valid){
       this.musteri=Object.assign({},this.FormMusteriEkle.value)
-      //todo
+      
       //this.musteri.Yonetici.YoneticiId=4;
       this.musteriService.musteriEkle(this.musteri);
     }

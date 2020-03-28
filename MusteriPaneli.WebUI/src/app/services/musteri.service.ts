@@ -13,7 +13,7 @@ export class MusteriService {
     private httpClient: HttpClient,
     private alertifyService: AlertifyService,
     private router: Router //router eklendi
-  ) {}
+  ) { }
 
   path = "https://localhost:44330/api/";
 
@@ -24,7 +24,6 @@ export class MusteriService {
 
 
   musteriSil(musteriId: number) {
-    // alert("musteriSilservis " + musteriId);
     return this.httpClient
       .post(this.path + "musteri/sil/?musteriId=" + musteriId, {})
       .subscribe(data => {
@@ -47,38 +46,21 @@ export class MusteriService {
       .post(this.path + "musteri/guncelle", musteri)
       .subscribe(data => {
         this.alertifyService.success(
-       "Müşteri başarıyla güncellendi."
+          "Müşteri başarıyla güncellendi."
         );
         this.router.navigateByUrl("/customers");
       });
   }
-  // update(product: Product) {
-  //   let id: number = product.ProductID;
-  //   this.httpClient.put(this.path + "products/edit/" + id, product).subscribe();
-  // }
-  // delete(product: Product) {
-  //   let id: number = product.ProductID;
-  //   this.httpClient.delete(this.path + "products/delete/" + id).subscribe();
-  // }
 
-
-
-
-
-  // path2 = "http://localhost:58083/api/";
-  // getProductById(id): Observable<Product> {
-  //   return this.httpClient.get<Product>(this.path2 + "products/detail/" + id);
-  // }
 
   musteriGetir(musteriId): Observable<Musteri[]> {
-    // alert("gelen musteri ıd" + musteriId);
     return this.httpClient.get<Musteri[]>
-    (
-      this.path + "musteri/musteriGetir/" + musteriId
-    );
+      (
+        this.path + "musteri/musteriGetir/" + musteriId
+      );
   }
 
-  musteriListesineGit(){
+  musteriListesineGit() {
     this.router.navigateByUrl("/customers");
   }
 
