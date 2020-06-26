@@ -1,10 +1,9 @@
 # MÜSTERİ PANELİ UYGULAMASI
 
-*Uygulama Visual Studio 2017 kullanılarak Asp.Net Core 2.2 ve Angular 9.0.5 ile geliştirilmiştir. Veritabanı olarak MSSQL kullanılmıştır.
-*Uygulama içerisinde yönetici giriş yapıp müşteri listeleme/ekleme/silme/düzenleme işlemlerini gerçekleştirebilmektedir.
-Yönetici giriş işleminde JSON Web Token(Jwt) kullanılmıştır.
+* Uygulama Visual Studio 2017 kullanılarak Asp.Net Core 2.2 ve Angular 9.0.5 ile geliştirilmiştir. Veritabanı olarak MSSQL kullanılmıştır.
+* Uygulama içerisinde yönetici giriş yapıp müşteri listeleme/ekleme/silme/düzenleme işlemlerini gerçekleştirebilmektedir.
+* Yönetici giriş işleminde JSON Web Token(Jwt) kullanılmıştır.
 
-*Uygulamanın çalışır halinin videosu => https://drive.google.com/file/d/1Q6eomcMxHqWrG1AsY5SlzchaVDyQIXlO/view
 
 ## Uygulamanın kurulumu ve çalıştırılması =>
 Öncelikle MSSQL Management Studio ile musteri_paneli.sql adlı script  çalıştırılarak veritabanı oluşturulmalıdır.
