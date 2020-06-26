@@ -48,9 +48,7 @@
 *	Artık web uygulaması çalışır durumdadır.Gelen giriş ekranından 
 
 Kullanıcı Adı : “admin”
-Şifre: “admin”
-
-yazarak giriş yapan kişi bir takım müşteri işlemlerini gerçekleştirebilip dilerse uygulamadan çıkış yapabilmektedir.
+Şifre: “admin” yazarak giriş yapan kişi bir takım müşteri işlemlerini gerçekleştirebilip dilerse uygulamadan çıkış yapabilmektedir.
 
 
 ![musteri-paneli-demo](https://user-images.githubusercontent.com/48556212/85897245-9b1c7400-b802-11ea-9fb4-04bc6f73c7d5.gif)
